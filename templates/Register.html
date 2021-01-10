@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+    <link rel="icon" href="{% static 'educational.png' %}">
+  </head>
+  <body>
+    
+    <form action=""register" method="post" " style="border:1px solid #ccc">  <!--add link-->
+    {% csrf_token %}
+      <div class="contact-form">
+        
+        <!-- <h1>Please fill in this form to create an account.</h1> -->
+       
+
+        <div class="contact-form">
+          <img alt="" class="avatar" src="{% static 'loginlogo-mobile.png' %}">
+          <h2>REGISTER</h2>
+          <hr style=" background-color: aliceblue; margin-top: -10px;"><br>
+          <form action="">    <!--add link-->
+            <input placeholder="username" type="text" name="username">
+             
+            <input placeholder="Enter Email" type="email" name="email">
+            <input placeholder="Enter Password" type="password" name="password">
+            <!-- <p> <input type="checkbox" name="remember me"  style="background-color: aliceblue;">Remember me</p> -->
+              <input type="submit" class="signupbtn" value="Register">
+            
+
+        <p>By creating an account you agree to our <b>Terms & Privacy</b>.</p>
+
+        <div class="clearfix">
+          <a href="index_4.html"><button type="button" class="cancelbtn">Cancel</button></a>
+          
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

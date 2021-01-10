@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>STUDENT-ASSISTANT</title>
+	<link href="{% static 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap' %}" rel="stylesheet">
+	<link href="{% static 'login.css' %}" rel="stylesheet">
+</head>
+
+<body>
+	<div class="contact-form">
+		<img alt="" class="avatar" src="{% static 'loginlogo-mobile.png' %}">
+		<h2>LOGIN</h2>
+		<form action="login" method="post">
+			{% csrf_token %}
+			<input placeholder="Enter Email" type="email" name ="email">
+			<input placeholder="Enter Password" type="password" name ="password">
+
+			<input type="submit" value="Sign in">
+			<a href="index_4.html"><button type="button" class="cancelbtn">Cancel</button></a>
+
+		</form>
+	</div>
+	<div>
+		{% for message in messages %}
+		<h3> {{message}}</h3>
+		{% endfor %}
+	</div>
+</body>
+
+</html>

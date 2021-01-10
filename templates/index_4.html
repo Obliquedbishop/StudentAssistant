@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <title>Student Assistant</title>
+  <link rel="icon" href="{% static 'educational.png' %}">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="logo">
+      <img class="log abc" src="{% static 'educational.png' %}" alt="Logo">
+    </div>
+<ul class="nav-area">
+<li><a href="accounts/login">LOGIN</a></li>
+<li><a href="accounts/register">Register</a></li>   <!--add about us link-->
+
+<li><a href="#">Log Out</a></li>   <!--add contact us page link-->
+</ul>
+</div>
+
+
+
+  <h1 class="part1 abc" height="20%">Student </h1><h1 class="part2 abc">Assistant</h1>
+
+  <table>
+    <tr>
+      <td class="t1"> <a href="academics.html"><img class="l1" width="100px" height="100px" src="{% static 'logo.png' %}" alt="Logo"></a>
+        <br>
+        <a href="academics.html" style="text-decoration: none;">
+          <h2 class="acad" >ACADEMICS</h2>
+        </a>
+      </td>
+      <td class="t2">
+        <a href="careers.html"  style="text-decoration: none;"><img class="l1" width="100px" height="100px" src="{% static 'logo2.png' %}" alt="Logo">
+          <h2 class="acad">CAREERS</h2>
+        </a>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
