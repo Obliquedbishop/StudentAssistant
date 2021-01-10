@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Student Assistant</title>
+  <link rel="icon" href="educational.png">
+  <link rel="stylesheet" href="schedule2.css">
+</head>
+<body style="background: url(Untitled_design_3.png) ">
+<h1 style="color:white; font-family: cursive; margin-left: 0%; font-weight: 800;">CLASS-SCHEDULE</h1>
+<hr style="color: white; width: 25%;">
+
+    <div class="grid-container">
+        <div class="grid-item"><button class="pop" onclick="togglePopup()">MONDAY</button>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item"><button class="pop" onclick="togglePopup()">TUESDAY</button>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item"><button class="pop" onclick="togglePopup()">WEDNESDAY</button>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item"><button class="pop" onclick="togglePopup()">THURSDAY</button>  
+      </div>
+      <div class="grid-container">
+        <div class="grid-item"><button class="pop" onclick="togglePopup()">FRIDAY</button>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item"><button class="pop" onclick="togglePopup()">SATURDAY</button>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item"><button class="pop" onclick="togglePopup()">SUNDAY</button>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item"><button class="pop" onclick="togglePopup()"> EXTRA-CLASS</button>
+      </div>
+
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+
+          <h1>ADD A CLASS</h1>
+          <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <thead>
+                <tr>
+                  <th>DATE</th>
+                  <th>SUBECT-MAME</th>
+                  <th>LINK</th>
+                  <th>TIME</th>
+                  <th>SAVE</th>
+
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <td><input type="date" class="date"></td>
+                   <td><form action="action.html">
+                      <input type="text"  placeholder="subject-name" class="sub">
+                  </form></td>
+                  <td>
+                      <input type="text" placeholder="LINK" class="link" width="25%">
+                  </td>
+                  <td >
+                    <input type="time" id="appt" name="appt"></p></button></td>
+                    <td> <form action="">            <!--save link-->
+                            <button name="SAVE"  class="save" style="background-color: black;color: white;">SAVE</button>
+                    </form> </td>
+                </tr>
+                <tr>
+                    <td><input type="date" class="date"></td>
+                     <td><form action="action.html">
+                        <input type="text"  placeholder="subject-name" class="sub">
+                    </form></td>
+                    <td>
+                        <input type="text" placeholder="LINK" class="link">
+                    </td>
+                    <td >
+                      <input type="time" id="appt" name="appt"></p></button></td>
+                      <td> <form action="">            <!--save link-->
+                              <button name="SAVE"  class="save" style="background-color: black;color: white;">SAVE</button>
+                      </form> </td>
+                  </tr>
+                  <tr>
+                    <td><input type="date" class="date"></td>
+                     <td><form action="action.html">
+                        <input type="text"  placeholder="subject-name" class="sub">
+                    </form></td>
+                    <td>
+                        <input type="text" placeholder="LINK" class="link">
+                    </td>
+                    <td >
+                      <input type="time" id="appt" name="appt"></p></button></td>
+                      <td> <form action="">            <!--save link-->
+                              <button name="SAVE"  class="save" style="background-color: black;color: white;">SAVE</button>
+                      </form> </td>
+                  </tr>
+                  <tr>
+                    <td><input type="date" class="date"></td>
+                     <td><form action="action.html">
+                        <input type="text"  placeholder="subject-name" class="sub">
+                    </form></td>
+                    <td>
+                        <input type="text" placeholder="LINK" class="link">
+                    </td>
+                    <td >
+                      <input type="time" id="appt" name="appt"></p></button></td>
+                      <td> <form action="">            <!--save link-->
+                              <button name="SAVE"  class="save" style="background-color: black;color: white;">SAVE</button>
+                      </form> </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+
+<script>
+ function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+</script>
+
+
+
+</body>
